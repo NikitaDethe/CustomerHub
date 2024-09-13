@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<body style="margin-top: 35px; background-color:lightgrey;">
+    <div class="container">
+<h2 class="display-4" align="center"><b>New Customer Form</b></h2>
+<hr>
+<a href="index.jsp"><img src="image/homepage.jpg" alt="Home" width="55"></a>
+
+
+<form action="AddCustomer" method="post">
+	<table   align="center" cellspacing="8px" cellpadding="7px">
+	
+	<tr>
+	<td><b>Customer Name</b></td>
+	<td><input type="text" name="custnm" required autocomplete="off" class="form-control"></td>
+	</tr>
+	
+	<tr>
+	<td><b>City</b></td>
+	<td><input type="text" name="city" required autocomplete="off" class="form-control"></td>
+	</tr>
+	
+	<tr>
+	<td><b>Product Name</b></td>
+	<td><input type="text" name="prodnm" required autocomplete="off" class="form-control"></td>
+	</tr>
+	
+	<tr>
+	<td><b>Product Id</b></td>
+	<td><input type="number" name="prodid" required autocomplete="off" class="form-control"></td>
+	</tr>
+	
+	<tr>
+	<td><b>Price</b></td>
+	<td><input type="number" name="price" required autocomplete="off" class="form-control"></td>
+	</tr>
+	
+	<tr>
+	<td><b>paymode</b></td>
+	<td>
+	<select name="paymode">
+	<option value="NetBanking">NetBanking</option>
+	<option value="cash on delivery">Cash On Delivery</option>
+	</select>
+	</td>
+	</tr>
+	
+	<tr>
+	
+	<td><input type="submit" value="Submit" required class="btn btn-primary"></td>
+		<td><input type="reset" value="Reset" required class="btn btn-secondary"></td>
+	
+	</tr>
+	</table>
+
+</form>
+
+</div>
+</body>
+</html>

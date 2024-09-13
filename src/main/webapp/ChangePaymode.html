@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>payment mode changing</title>
+<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body style="margin-top: 45px; background-color: lightgray; ">
+    <div class="container">
+        <h1 style="color: purple; " align="center">Change Payment Mode</h1>
+        <hr>
+        <a href="index.jsp"><img src="image/homepage.jpg" alt="Home" width="65"></a>
+
+        <form action="PayChange" method="post">
+            <table align="center"cellpadding="5px" cellspacing="6px">
+            <tr>
+            <td><b>Customer Number:</b></td>
+ 			<td><input type="number" name="custno" required autocomplete="off" class="form-control"></td>
+            </tr>
+            <tr>
+            <td><b>Payment Mode:</b></td>
+            <td><select name="paymode" required autocomplete="off" class="form-control">
+            <option value="NetBanking">NetBanking</option>
+            <option value="CashOnDelivery">Cash On delivery</option> 
+            </select>
+            </tr>
+            
+            <tr>
+            <td><b>Change Payment Mode:</b></td>
+            <td><select name="changepaymode" required autocomplete="off" class="form-control">
+            <option value="NetBanking">NetBanking</option>
+            <option value="CashOnDelivery">Cash On delivery</option> 
+            </select>
+            </tr>
+            
+            <tr>
+            <td><input type="submit" value="submit" class="btn btn-primary"></td>
+            <td><input type="reset" value="reset" class="btn btn-secondary"></td>
+            </tr>
+        </table>
+        </form>
+        </div>
+</body>
+</html>

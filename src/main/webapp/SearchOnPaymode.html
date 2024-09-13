@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body style="margin-left: 35px; margin-top: 35px; background-color: lightgray;">
+    <div class="container">
+    <h2 class="display-4" align="center" style="color: purple;"> Search Details using PayMode</h2>
+    <hr>
+    <a href="index.jsp"><img src="image/homepage.jpg" alt="Home" width="65"></a>
+        <br>
+    <form action="PaymodeSearch.jsp" name="frm" method="post" style="font-size: x-large;">
+          <table align="center" cellspacing="5px" cellpadding="6px"  >
+            <tr>
+                <td><b>Paymode:</b> </td>
+                <td>
+                <select name="paymode" required autocomplete="off" class="form-control">
+	<option value="NetBanking">NetBanking</option>
+	<option value="cash on delivery">Cash On Delivery</option>
+	</select>
+  
+                <td> <input type="submit" value="search" class="btn btn-outline-primary">
+                </td>
+                
+            </tr>
+
+          </table>
+        </form>
+</div>
+</body>
+</html>
